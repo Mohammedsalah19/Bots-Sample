@@ -150,8 +150,10 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
-    <Compile Include="Controllers\NatigaController.cs" />
     <Compile Include="Controllers\RootDialog.cs" />
+    <Compile Include="Dialogs\BasicConversationDialog.cs" />
+    <Compile Include="Dialogs\BickYourShirt.cs" />
+    <Compile Include="Dialogs\ShirtSize.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -161,6 +163,8 @@
     <Compile Include="Models\DocumentResponse.cs" />
     <Compile Include="Models\DocumentRequest.cs" />
     <Compile Include="Models\TestAnalyzerHelper.cs" />
+    <Compile Include="Models\TranslationClient.cs" />
+    <Compile Include="Models\Translator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +172,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Models\natega100000.json" />
+    <None Include="Properties\PublishProfiles\DemoBot20180815050412 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -175,8 +180,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Dialogs\" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
